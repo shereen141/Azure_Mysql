@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <h1>Shereen Hasan</h1>
+    <h2>1001437130</h2>
+    <h2>1 pm class</h2>
+    <meta charset="UTF-8">
+    <img src={{ url_for('static',filename ='c.jpg')}} width=200 height=200>
+    <title>Title</title>
+
+</head>
+<body>
+display file:<br>
+
+<table border="1">
+    <tr>
+        <th>time</th>
+        <th>latitude</th>
+        <th>longitude</th>
+        <th>depth</th>
+        <th>place</th>
+    </tr>
+    {% for i in display[:-1]  %}
+    <tr>
+    {% for j in i  %}
+        <td>{{ j }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+
+time is {{ display[-1] }}
+
+</body>
+</html>
