@@ -19,7 +19,7 @@ Programming Language:Python
 
 ->download() download the picture for a prticular dish along with the data
 
-->insert() Show data along with the data on the web page
+->insert() Show data along with the pictures on the web page
 
 ***************************************************************
 
